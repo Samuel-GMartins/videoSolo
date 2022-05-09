@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: black;
     color: white;
     font-size: 15pt;
@@ -54,4 +54,14 @@ button {
 
 button:hover {
     background-color: brown;
+}
+
+#fotocad, #fotolog{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
