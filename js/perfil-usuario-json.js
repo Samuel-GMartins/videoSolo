@@ -1,11 +1,12 @@
 
 // Escopos var let const
-let cliente = '{"nome": "Samuel Martins", "idade":"23","email":"dev.gmartins@gmail.com", "preferencia": "Não", "dataInicio": " 28/03/2022", "tipoAssinante":"Administrador", "valor": 250.75}'
+let cliente = '{"nome": "Samuel Martins", "imagem": "fotoCliente.jpeg", "idade":"23","email":"dev.gmartins@gmail.com", "preferencia": "Não", "dataInicio": " 28/03/2022", "tipoAssinante":"Administrador", "valor": 250.75}'
 
 let clienteJson = JSON.parse(cliente)
 
 console.log(clienteJson)
 
+let imagem = document.querySelector("#imagem")
 let conteudo = document.querySelector("#conteudo")
 let titulo = document.querySelector("#titulo")
 let nome = document.querySelector("#nome")
@@ -17,6 +18,7 @@ let tipoAssinante = document.querySelector("#tipoAssinante")
 let valor = document.querySelector("#valor")
 
 titulo.innerHTML = "Página do Usuário"
+imagem.innerHTML = '<img style="border-radius:50%" src="images/'  + clienteJson.imagem + '"width="300"/>'
 nome.innerHTML = "<b>Nome:</b> " + clienteJson.nome
 idade.innerHTML = "<b>Idade: </b>" + clienteJson.idade
 email.innerHTML = "<b>E-mail:</b> " + clienteJson.email
