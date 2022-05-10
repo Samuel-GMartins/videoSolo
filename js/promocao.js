@@ -1,37 +1,75 @@
-console.log("Teste")
+var filmes =[
+    ["A Freira",
+    "afreira.jpeg",
+    "Terror",
+    "2018",
+    "Presa em um convento na Romênia, uma freira comete suicídio. Para investigar o caso, o Vaticano envia um padre assombrado e uma noviça prestes a se tornar freira."],
 
-var filmes = [
-    ["A Freira", "afreira.jpeg", "Quando uma jovem freira de uma abadia enclausurada na Romênia tira a própria vida, um padre com um passado assombrado e uma noviciada no limiar de seus votos finais são enviados pelo Vaticano para investigar. Juntos, eles descobrem o segredo profano da ordem. Arriscando não apenas suas vidas, mas sua fé e suas próprias almas, eles enfrentam uma força malévola na forma de uma freira demoníaca.", "R$9,99"],
+    ["Corra",
+    "corra.jpeg",
+    "Terror",
+    "2017",
+    "Chris é um jovem fotógrafo negro que está prestes a conhecer os pais de Rose, sua namorada caucasiana. Com o tempo, ele percebe que a família dela esconde algo muito perturbador."],
 
-    ["A Hora Do Rush", "bateroucorrer.jpeg", "Quando a filha de um diplomata chinês é sequestrada em Los Angeles, ele chama o detetive de Hong Kong Lee (Jackie Chan) para ajudar o FBI no caso. Mas o FBI não quer nada com Lee, e eles o jogam no LAPD, que designa o detetive James Carter (Chris Tucker) para vigiá-lo. Embora Lee e Carter não se suportem, eles decidem trabalhar juntos para resolver o caso por conta própria quando descobrem que foram abandonados pelo FBI e pela polícia.", "R$9,99"],
+    ["A Hora do Rush",
+    "bateroucorrer.jpeg",
+    "Ação/Comédia",
+    "1998",
+    "A filha de um diplomata chinês é sequestrada em Los Angeles e o cônsul chama o inspetor Lee em Hong Kong para ajudar o FBI com o caso."],
 
-    ["Como Eu Era Antes De Você", "comoeueraantesdevc.jpeg", "A jovem e peculiar Louisa Lou Clark (Emilia Clarke) muda de um emprego para outro para ajudar sua família a sobreviver. Sua atitude alegre é posta à prova quando ela se torna cuidadora de Will Traynor (Sam Claflin), um jovem banqueiro rico que ficou paralisado de um acidente dois anos antes. A visão cínica de Will começa a mudar quando Louisa mostra a ele que a vida vale a pena ser vivida. À medida que seu vínculo se aprofunda, suas vidas e corações mudam de maneiras que ninguém poderia imaginar.", "R$9,99"],
+    ["Em Defesa de Cristo",
+    "cristo.jpeg",
+    "Drama/História",
+    "2017",
+    "Um jornalista investigativo, ateu convicto, parte em uma investida para desmentir a existência de Deus após sua esposa tornar-se cristã."],
 
-    ["Corra", "corra.jpeg", "Agora que Chris e sua namorada, Rose, atingiram o marco do namoro de conhecer os pais, ela o convida para uma escapadela de fim de semana no interior com seus pais, Missy e Dean. A princípio, Chris vê o comportamento excessivamente acomodado da família como tentativas nervosas de lidar com o relacionamento interracial de sua filha, mas à medida que o fim de semana avança, uma série de descobertas cada vez mais perturbadoras o leva a uma verdade que ele nunca poderia ter imaginado.", "R$9,99"],
+    ["Homem Aranha",
+    "semvoltapracasa.jpeg",
+    "Ação/Aventura",
+    "2021",
+    "O Homem-Aranha precisa lidar com as consequências da sua verdadeira identidade ter sido descoberta."],
 
-    ["Em Defesa De Cristo", "cristo.jpeg", "Em 1980, a premiada reportagem investigativa de Lee Strobel (Mike Vogel) lhe rendeu uma promoção a editor jurídico do Chicago Tribune. As coisas em casa não estão indo tão bem. A nova fé de sua esposa Leslie (Erika Christensen) em Cristo obriga Lee a utilizar seu treinamento jornalístico e jurídico para tentar refutar as alegações do cristianismo, colocando seu ateísmo resoluto contra sua fé crescente.", "R$9,99"],
-
-    ["Doutor Estranho", "doutorestranho.jpg", "A vida do Dr. Stephen Strange (Benedict Cumberbatch) muda depois que um acidente de carro o rouba do uso de suas mãos. Quando a medicina tradicional falha, ele procura cura e esperança em um misterioso enclave. Ele rapidamente descobre que o enclave está na linha de frente de uma batalha contra forças das trevas invisíveis empenhadas em destruir a realidade. Em pouco tempo, Strange é forçado a escolher entre sua vida de fortuna e status ou deixar tudo para trás para defender o mundo como o feiticeiro mais poderoso que existe.", "R$9,99"],
-
-    ["Homem Aranha: Sem Volta Pra Casa", "semvoltapracasa.jpeg", "Com a identidade do Homem-Aranha agora revelada, nosso amigável lançador de teias da vizinhança é desmascarado e não é mais capaz de separar sua vida normal como Peter Parker dos altos riscos de ser um super-herói. Quando Peter pede ajuda ao Doutor Estranho, as apostas se tornam ainda mais perigosas, forçando-o a descobrir o que realmente significa ser o Homem-Aranha.", "R$9,99"],
-
-    ["Shrek", "sherek.jpeg", "Era uma vez, em um pântano distante, vivia um ogro chamado Shrek (Mike Myers), cuja preciosa solidão é subitamente destruída por uma invasão de irritantes personagens de contos de fadas. Todos eles foram banidos de seu reino pelo malvado Lord Farquaad (John Lithgow). Determinado a salvar sua casa para não mencionar a dele Shrek faz um acordo com Farquaad e sai para resgatar a princesa Fiona (Cameron Diaz) para ser a noiva de Farquaad. Resgatar a princesa pode ser pequeno comparado ao seu segredo profundo e sombrio.", "R$9,99"],
-
-    ["To Ryca", "toryca.jpeg", "Selminha (Samantha Schmütz) é uma frentista que tem a chance de deixar seus dias de pobreza para trás ao descobrir uma herança de família. Mas para conseguir colocar a mão nessa grana, ela terá que cumprir o desafio lançado por seu tio: precisa gastar R$ 30 milhões em 30 dias, sem acumular nada e nem contar para ninguém. Mas, nessa louca maratona, ela vai acabar descobrindo que tem coisas que o dinheiro não compra.", "R$9,99"],
-
-    ["Veloses e Furiosos", "velosesefuriosos.jpeg", "Dominic Toretto (Vin Diesel) gosta da adrenalina das corridas de carros de rua e seus fãs o tratam como uma estrela do rock. Depois de um encontro ardente com o implacável Johnny Tran, Dom decide levar Brian (Paul Walker), um recém-chegado às corridas de rua, sob sua asa. A irmã de Dom, Mia, também vê algo de que gosta em Brian. O problema é que nenhum deles percebe que ele é um policial disfarçado, e Dominic e seu rival Johnny Tran são os principais suspeitos em um caso envolvendo dinheiro sujo e sequestro de grande plataforma.", "R$9,99"]
+    ["Shrek",
+    "sherek.jpeg",
+    "Comédia/Fantasia",
+    "2001",
+    "Era uma vez um pântano distante, onde vivia um ogro chamado Shrek. De repente, seu sossego é interrompido pela invasão de personagens de contos de fadas que foram banidos de seu reino pelo maldoso Lorde Farquaad."],
 
 ]
+console.log(filmes)
+// Galeria Faz acesso ao elemento div com id=Galeria
+var galeria = document.querySelector('#galeria')
 
-var galeria = document.querySelector("#galeria")
+//Logica de iteração para consumo de array
+for (var i = 0; i < filmes.length; i++){
+    
+    // Cria um Elemento div
+    var div = document.createElement('div');
 
-for (var i = 0; i< filmes.length; i++){
-    var img = new Image()
-    img.src = "images/" + filmes[i][1]
-    img.width= 200
-    galeria.innerHTML += "<h1>" + "<strong>" + filmes[i][0] + "<br>"
-    galeria.appendChild(img)
-    galeria.innerHTML += "<p>" + filmes[i][2]
-    galeria.innerHTML += "<p>" + filmes[i][3] + "<hr>"
+    // Adiciona a classe com espaço 
+    div.classList.add('col-sm-4')
+    div.classList.add('mt-5')
+
+    // Cria um Elemento div para o conteudo
+    var conteudo = document.createElement('div')
+
+    // Cria uma classe pra div conteudo com nome row
+    conteudo.className = 'row'
+
+    //Insere um h3 com Título
+    conteudo.innerHTML += '<h3 class="col-sm-12 mb-3">' + filmes[i][0] + '</h3>'
+
+    // Insere uma Imagem com 100% dentro de uma div espaço 3
+    conteudo.innerHTML += '<div class="col-sm-6"><img src="images/' + filmes[i][1] + '"class="w-100" /></div>'
+
+    // Insere um parágrafo com a sinopse dentro de uma div espaço X
+    conteudo.innerHTML += '<div class="col-sm-6"><h5>' + filmes[i][2] +'</h5><h5>' + filmes[i][3] + '</h5><p>' + filmes[i][4] + '</p></div>'
+
+
+    // Div Recebe um conteudo
+    div.appendChild(conteudo)
+
+    // div recebe div
+    galeria.appendChild(div)
 
 }
