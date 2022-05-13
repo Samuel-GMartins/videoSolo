@@ -14,18 +14,23 @@
 <body>
     <header>
         <div class="row">
-            <div class="col-sm-3 mt-1">
-                <a href="index.html"><img src="images/logo.png" height="200" class="mt-3 ml-4"></a>
+            <div class="col-sm-2 mt-1">
+                <a href="index.html"><img src="images/logo.png" class="mt-3 ml-4 w-100"></a>
             </div>
-            <div class="col-sm-9 mt-5">
-                <h2>O site de vídeos que garante sua diversão e entretenimento, para quem está só ou em
-                    família.</h2>
+            <div class="col-sm-4 mt-5 ml-5">
+                <h3>O site de vídeos que garante sua diversão e entretenimento, para quem está só ou em
+                    família.</h3>
+            </div>
+            <div class="col-sm-5">
+                <span id="bemVindo"></span>
+                <a href="login.html" id="entrar">Entrar</a>
+                <a href="#" id="sair">Sair</a>
+
             </div>
         </div>
     </header>
     <nav class="text-center">
         <a href="perfil-usuario.html" class="col-sm-3">Minha Página</a>
-        <a href="index.html" class="col-sm-3">Pagina Principal</a>
         <a href="contato.html" class="col-sm-3">Contato</a>
         <a href="produtos.html" class="col-sm-3">Produtos</a>
         <a href="promocoes.html" class="col-sm-3">Promoções</a>
@@ -45,21 +50,21 @@
                     <h4 class="col-sm-4 ">Preço</h4>
                 </div>
                 <div class="row text-center">
-                    <div class="col-sm-4 text-left mt-2"> <img src="images/doutorestranho.jpg" class="w-50"></div>
-                    <div class="col-sm-4 mt-2">2</div>
-                    <div class="col-sm-4 mt-2">R$ 25,50</div>
+                    <div class="col-sm-4 text-left mt-2"><img src="images/doutorestranho.jpg" class="w-50"></div>
+                    <div class="col-sm-4 mt-2" id="qtd1"></div>
+                    <div class="col-sm-4 mt-2" id="pr1"></div>
                 </div>
                 <hr>
                 <div class="row text-center">
                     <div class="col-sm-4 text-left mt-2"> <img src="images/sherek.jpeg" class="w-50"></div>
-                    <div class="col-sm-4 mt-2">1</div>
-                    <div class="col-sm-4 mt-2">R$ 25,50</div>
+                    <div class="col-sm-4 mt-2" id="qtd2"></div>
+                    <div class="col-sm-4 mt-2" id="pr2"></div>
                 </div>
                 <hr>
                 <div class="row text-center">
                     <div class="col-sm-4 text-left mt-2"> <img src="images/comoeueraantesdevc.jpeg" class="w-50"></div>
-                    <div class="col-sm-4 mt-2">1</div>
-                    <div class="col-sm-4 mt-2">R$ 25,50</div>
+                    <div class="col-sm-4 mt-2" id="qtd3"></div>
+                    <div class="col-sm-4 mt-2" id="pr3"></div>
                 </div>
             </div>
 
@@ -67,16 +72,16 @@
                 <h1>Resumo do Pedido</h1>
                 <div class="border border-danger">
                     <div>
-                        <h3 class="mt-3 ml-3">0 Produtos</h3>
+                        <h3 class="mt-3 ml-3" id="qtdprod">0 Produtos</h3>
                     </div>
                     <div>
-                        <h3 class="mt-3 ml-3">Total R$ 00,00</h3>
+                        <h3 class="mt-3 ml-3" id="tot">Total R$ 00.00</h3>
                     </div>
                     <div class="mt-5 ml-4 mr-4">
                         <button class="btn btn-danger btn-lg btn-block">Continuar</button>
                     </div>
                     <div class="mt-3 mb-5 text-center">
-                        <h6><a href="">Adicionar Mais Produtos</a></h6>
+                        <h6><a href="produtos.html">Adicionar Mais Produtos</a></h6>
                     </div>
 
                 </div>
@@ -114,5 +119,7 @@
         </div>
     </footer>
 </body>
+<script src="js/carrinho.js"></script>
+<script src="js/index.js"></script>
 
 </html>
