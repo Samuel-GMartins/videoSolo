@@ -10,6 +10,8 @@ function msgUser(){
     let nomeUser = user.substring(0,user.indexOf('@'))
     bemVindo.innerHTML='Olá, <b>' + nomeUser + '</b>'
     entrar.style.display="none"
+    cad.style.display="none"
+
 }
 
 function resetUser(){
