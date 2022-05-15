@@ -8,7 +8,7 @@ let sair = document.querySelector('#sair')
 
 function msgUser(){
     let nomeUser = user.substring(0,user.indexOf('@'))
-    bemVindo.innerHTML='Olá, <b>' + nomeUser + '</b>'
+    bemVindo.innerHTML='Olá, <b class="text-danger">' + nomeUser + '</b>'
     entrar.style.display="none"
     cad.style.display="none"
 
