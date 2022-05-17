@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Index</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+        <a class="navbar-brand"><img src="images/logo.png" alt="" width="80px"></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html"><img src="../images/do-utilizador.png " alt="" width=" 20px"></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="indexAdmin.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastroAdmin.html">Cadastrar Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastroProduto.html">Cadastrar Produto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="text-right">
+            <span id="bemVindo"></span>
+            <a href="loginAdmin.html" id="entrar">Entrar</a>
+            <a href="#" id="sair" class="ml-2">Sair</a>
+        </div>
+    </nav>
+
+    <form action="#" method="post" id="formCadastroProduto" class="w-50 mx-auto p-4 mt-5 mb-5"
+        style="border:3px solid #ccc;border-radius: 12px">
+
+        <fieldset class="form">
+            <legend class="text-center mt-2 mb-2">Cadastro de Produto</legend>
+            <div class="form-group">
+                <label for="tituloFilme">Título</label>
+                <input class="form-control w-50" type="text" id="tituloFilme" placeholder='"A Volta dos que Não Foram"'>
+            </div>
+            <div class="form-group">
+                <label for="categoriaFilme">Categoria</label>
+                <input class="form-control w-50" type="text" id="categoriaFilme" placeholder='"Terror"'>
+            </div>
+
+            <div class="form-group">
+                <label for="anoDeLancamento">Ano De Lançamento</label>
+                <input class="form-control w-50" maxlength="4" id="anoDeLancamento" placeholder='"1983"'>
+            </div>
+            <div class="form-group">
+
+                <label for="imagemFilme">Imagem</label>
+                <input class="form-control w-50" aria-label="file example" type="file" id="imagemFilme">
+            </div>
+
+            <div>
+                <textarea id="sinopseFilme" style="border:1px solid #ccc;border-radius: 10px" cols="80" rows="8"
+                    placeholder="Sinopse filme"></textarea>
+            </div>
+
+            <div>
+                <button type="submit" id="btCadastroProduto" class="btn btn-danger mt-3">Cadastrar Produto</button>
+            </div>
+        </fieldset>
+    </form>
+
+
+    <footer class="text-center mt-4">
+        <hr>
+        <p class="text-center">&copy; 2022 - Projeto Vídeos - Versão de aprendizado Solo</p>
+        <div class="d-flex flex-row justify-content-center">
+            <p class="mr-1"><a href="https://github.com/Samuel-GMartins">GitHub</a></p>
+            <p>|</p>
+            <p class="ml-1"><a href="https://www.linkedin.com/in/sgmartinss">Linkedin</a></p>
+        </div>
+
+    </footer>
+</body>
+<script src="jsAdmin/indexAdmin.js"></script>
+
+</html>

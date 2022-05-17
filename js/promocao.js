@@ -71,7 +71,7 @@ for (var i = 0; i < filmes.length; i++) {
 
 
     //insere o h3 como Título
-    conteudo.innerHTML += '<h3 class="col-sm-12">' + filmes[i][0] + '</h3>'
+    conteudo.innerHTML += '<h1 class="col-sm-12">' + filmes[i][0] + '</h1>'
 
     // Insere a imagem com 100% dentro de uma div espaço 3
     conteudo.innerHTML += '<div class="col-sm-4"><img src="images/' + filmes[i][1] + '"class="w-100" /></div>'

@@ -7,37 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Login Admin</title>
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png" class="mt-4" id="fotolog">
+    <header class="text-center mt-5">
+        <img src="images/chave.png">
     </header>
 
-    <form action="index.html" method="get" id="formLogin" class="w-50 mx-auto p-3 mt-5 mb-5"
-    style="border:1px solid #ccc; border-radius: 12px;">
+    <form action="indexAdmin.html" method="get" id="formLogin" class="w-50 mx-auto p-3 mt-5 mb-5"
+        style="border:1px solid #ccc; border-radius: 12px;">
         <fieldset class="ml-5 mr-5 text-center">
             <div class="row">
                 <div class="col-sm-12 mt-4">
                     <legend class="tituloForm">Faça Login</legend>
+                    <p>Login de Administrador</p>
                 </div>
 
                 <div class="form-group col-sm-12 mt-4">
-                <input type="email" name="email" id="email" placeholder="Digite seu E-mail" class="form-control" >
+                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail" class="form-control w-50">
                 </div>
 
                 <div class="form-group col-sm-12 mt-4">
-                    <input type="password" name="senha" id="senha" placeholder="Digite Uma Senha Forte" class="form-control">
-                    </div>
+                    <input type="password" name="senha" id="senha" placeholder="Digite Uma Senha Forte"
+                        class="form-control w-50">
+                </div>
 
                 <div class="form-group col-sm-12 mt-4">
                     <button type="button" id="btLogin" class="btn btn-danger">Login</button>
                 </div>
                 <div class="col-sm-12 mt-2">
-                    <a href="cadastro.html"><p>Não Possui Cadastro? Cadastre-se</p></a>
+                    <a href="cadastroAdmin.html" style="color:white">
+                        <p>Não Possui Cadastro? Cadastre-se</p>
+                    </a>
                 </div>
+            </div>
         </fieldset>
     </form>
     <footer class="text-center mt-4">
@@ -48,13 +53,11 @@
             <p>|</p>
             <p class="ml-1"><a href="https://www.linkedin.com/in/sgmartinss">Linkedin</a></p>
         </div>
-        <div class="d-flex flex-row justify-content-center">
-            <p class="mr-1"><a href="login.html">Login</a></p>
-            <p>|</p>
-            <p class="ml-1"><a href="cadastro.html">Cadastre-se</a></p>
-        </div>
 
     </footer>
 </body>
-<script src="js/login.js"></script>
+<script src="jsAdmin/loginAdmin.js"></script>
+<script src="jsAdmin/indexAdmin.js"></script>
+
+
 </html>

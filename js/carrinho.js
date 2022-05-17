@@ -1,34 +1,24 @@
-let qtd1 = document.querySelector('#qtd1')
-let qtd2 = document.querySelector('#qtd2')
-let qtd3 = document.querySelector('#qtd3')
-
-let pr1 = document.querySelector('#pr1')
-let pr2 = document.querySelector('#pr2')
-let pr3 = document.querySelector('#pr3')
-
-let qtdprod = document.querySelector('#qtdprod')
-let tot = document.querySelector('#tot')
-
-valorqtd1 = 1
-valorqtd2 = 2
-valorqtd3 = 1
+valorpro1 = 1
+valorpro2 = 2
+valorpro3 = 1
 
 preco1 = 12.50
 preco2 = 15
 preco3 = 11
 
-qtdtot = valorqtd1 + valorqtd2 + valorqtd3
-precotot = preco1 + preco2 + preco3
+quantidaDeProdutos = valorpro1 + valorpro2 + valorpro3
+somatotal = preco1 + preco2 + preco3
 
 
-qtd1.innerHTML = valorqtd1
-qtd2.innerHTML = valorqtd2
-qtd3.innerHTML = valorqtd3
+let pro1 = document.querySelector('#pro1').innerHTML = valorpro1
+let pro2 = document.querySelector('#pro2').innerHTML = valorpro2
+let pro3 = document.querySelector('#pro3').innerHTML = valorpro3
 
-qtdprod.innerHTML = qtdtot + ' Produtos'
+let pre1 = document.querySelector('#pre1').innerHTML = 'R$ ' + parseFloat(preco1).toFixed(2)
+let pre2 = document.querySelector('#pre2').innerHTML = 'R$ ' + parseFloat(preco2).toFixed(2)
+let pre3 = document.querySelector('#pre3').innerHTML = 'R$ ' + parseFloat(preco3).toFixed(2)
 
-pr1.innerHTML = 'R$ ' + parseFloat(preco1)
-pr2.innerHTML = 'R$ ' + parseFloat(preco2)
-pr3.innerHTML = 'R$ ' + parseFloat(preco3)
 
-tot.innerHTML = 'R$ ' + parseFloat(precotot)
+let totprod = document.querySelector('#totprod').innerHTML = quantidaDeProdutos + ' Produtos'
+
+let tot = document.querySelector('#tot').innerHTML = 'R$ ' + parseFloat(somatotal).toFixed(2)
