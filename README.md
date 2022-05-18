@@ -1,2 +1,2 @@
 # videoSolo
-# Acesse : https://samuel-gmartins.github.io/videoSolo/index.html
+# Acesse : https://samuel-gmartins.github.io/videoSolo/
