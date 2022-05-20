@@ -22,3 +22,36 @@ let pre3 = document.querySelector('#pre3').innerHTML = 'R$ ' + parseFloat(preco3
 let totprod = document.querySelector('#totprod').innerHTML = quantidaDeProdutos + ' Produtos'
 
 let tot = document.querySelector('#tot').innerHTML = 'R$ ' + parseFloat(somatotal).toFixed(2)
+
+
+
+function calculaValor1() {
+    // desconto em porcentagem
+    var desconto10 = 10
+    var total = somatotal - parseFloat((somatotal * desconto10) / 100);
+
+    document.querySelector('#tot').innerHTML = 'R$ ' + total.toFixed(2);
+}
+
+function calculaValor2() {
+    // desconto em porcentagem
+    var desconto20 = 20
+
+    var total = somatotal - parseFloat((somatotal * desconto20) / 100);
+
+    document.querySelector('#tot').innerHTML = 'R$ ' + total.toFixed(2);
+}
+
+document.querySelector("#botao").onclick = function () {
+
+    if (formDesconto.cupom.value == "CUPOM123") {
+        calculaValor1()
+    } else if (formDesconto.cupom.value == "CUPOM456") {
+        calculaValor2()
+    } else if (formDesconto.cupom.value != "CUPOM123", "CUPOM456") {
+        alert("Ops, cupom inválido!")
+    } else {
+        formDesconto.submit()
+
+    }
+}
