@@ -44,21 +44,29 @@
     </nav>
 
     <div class="row container">
-        <div class="col-sm-9">
+        <div class="col-sm-7 ml-5" style="border: 2px solid rgb(221, 208, 208); border-radius: 10px ;">
             <section id="tabs" class="project-tab">
-                <h1>Relatório de Chamadas</h1>
+                <h1 class="text-center">Relatório de Chamadas</h1>
                 <table class="table text-center">
                     <thead>
                         <tr>
-                            <th scope="col"><h4>Nome</h4></th>
-                            <th scope="col"><h4>Email</h4></th>
-                            <th scope="col"><h4>Telefone</h4></th>
-                            <th scope="col"><h4>Assunto</h4></th>
+                            <th scope="col">
+                                <h4>Nome</h4>
+                            </th>
+                            <th scope="col">
+                                <h4>Email</h4>
+                            </th>
+                            <th scope="col">
+                                <h4>Telefone</h4>
+                            </th>
+                            <th scope="col">
+                                <h4>Assunto</h4>
+                            </th>
                         </tr>
                     </thead>
                     <tbody style="color: white ;">
                         <tr>
-                            <th scope="row">Fernanda</th>
+                            <th scope="row" id="">Fernanda</th>
                             <td>fernandinhathebest@gmail.com</td>
                             <td>31923245012</td>
                             <td>Comprei um filme e não apareceu</td>
@@ -71,9 +79,18 @@
                         </tr>
                     </tbody>
                 </table>
+                <div>
+                    <p>Próximo cliente a ser atendido:</p>
+                    <p>00</p>
+                </div>
+                <div class="mb-5">
+                    <button class="btn btn-info">Confirmar Atendimento</button>
+                </div>
         </div>
+
+
         </section>
-        <div class="col-sm-3 mt-5 border border-secondary rounded">
+        <div class="col-sm-3 mt-5 ml-5" style="border: 2px solid rgb(221, 208, 208); border-radius: 10px ;">
             <div class="mt-3">
                 <h4>Chamadas Atendidas</h4>
                 <p>Total: 00</p>
@@ -86,6 +103,20 @@
     </div>
 
 
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col-sm-4">
+                <div> <img src="images/chave.png" alt=""></div>
+            </div>
+            <div class="col-sm-4">
+                <div> <img src="images/chave.png" alt=""></div>
+            </div>
+            <div class="col-sm-4">
+                <div> <img src="images/chave.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <hr>
         <p class="text-center">&copy; 2022 - Projeto Vídeos - Versão de aprendizado Solo</p>
@@ -97,6 +128,7 @@
     </footer>
 </body>
 <script src="jsAdmin/indexAdmin.js"></script>
-<script src="jsAdmin/relatorioComercial.js"></script>
+<script src="jsAdmin/relatorio-chamada.js"></script>
+
 
 </html>
