@@ -170,10 +170,8 @@ document.querySelector("#excluir1").onclick = function () {
 
 
 document.querySelector("#excluir2").onclick = function () {
-    var x;
-    var resposta = confirm("Você Tem Certeza Disso?");
+    var resposta = confirm("Você Tem Certeza Disso?")
     if (resposta==true){
-        x="você pressionou OK!";
         linha2.remove()
   } else {
     null
@@ -182,10 +180,8 @@ document.querySelector("#excluir2").onclick = function () {
 
 
 document.querySelector("#excluir3").onclick = function () {
-    var x;
     var resposta = confirm("Você Tem Certeza Disso?");
     if (resposta==true){
-        x="você pressionou OK!";
         linha3.remove()
   } else {
     null

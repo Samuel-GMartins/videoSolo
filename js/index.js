@@ -23,3 +23,19 @@ sair.onclick=function(){
     location.href='index.html'
 }
 localStorage.emailUser ? msgUser() : resetUser()
+
+
+///////////////////////////////////////////////////////////////////
+
+console.log(localStorage.length)
+
+function imprimeTela() {
+    let favorito1 = localStorage.getItem()
+}
+
+favorito1 = document.querySelector('#favorito1').src = localStorage.getItem('Doutor Estranho')
+favorito2 = document.querySelector('#favorito2').src = localStorage.getItem('A Freira')
+favorito3 = document.querySelector('#favorito3').src = localStorage.getItem('Em Defesa de Cristo')
+
+
+console.log(localStorage.getItem())
