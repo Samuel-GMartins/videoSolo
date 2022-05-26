@@ -10,13 +10,7 @@ trailer = ['https://www.youtube.com/embed/oQMc7Sq36mI',
 'https://www.youtube.com/embed/elKdcx9ar3k'
 ]
 
-
-
-// botao = document.querySelector('#refresh')
-
-
-
-
+botao = document.querySelector('#refresh')
 
 function trocaTrailer(){
     tr = trailer
