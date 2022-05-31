@@ -3,7 +3,7 @@ const fs = require('fs')
 
 //Cria o objeto server
 http.createServer(function (req, res) {
-    fs.readFile('indexcopy.html', function (err, data) {
+    fs.readFile('../index.html', function (err, data) {
 
     if (err) throw err
 
